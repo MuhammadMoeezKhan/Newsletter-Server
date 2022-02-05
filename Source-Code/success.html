@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confirmation</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/f19e89dde2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+var toastElementList = [].slice.call(document.querySelectorAll(".toast"));
+var toastList = toastElementList.map(function(element){
+  return new bootstrap.Toast(element, {
+      autohide: false
+    });
+});
+});
+</script>
+<style>
+.toast {
+left: 50%;
+top:30%;
+position: fixed;
+transform: translate(-50%, 0px);
+z-index: 9999;
+}
+h6{  
+text-align: center;
+margin-top: -2px;
+}h5{  
+text-align: center;
+margin-top: 338px;
+font-size: 13.5px;
+color:#2565AE;
+}
+h6 a{  
+text-decoration: none;
+color:#2565AE;
+}
+.toast-body{
+  text-align: center;
+  font-size: 14.5  px;
+}
+
+</style>
+</head>
+
+<body>
+<div class="toast bg-primary text-white fade show">
+    <div class="toast-header bg-primary text-white">
+        <strong class="me-auto"><i class="fas fa-check"></i>  Success!</strong>
+        <small>Subscribed</small>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast"></button>
+    </div>
+    <div class="toast-body">
+        You have been signed up to my newsletter.<br> I hope to update you with loads of awesome content!
+    </div>
+</div>
+<h5 div="message">Made with ❤️ </h5>
+<h6><a href="https://www.moeezkhan.com/" target="_blank">www.moeezkhan.com</a></h6>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
