@@ -1,4 +1,6 @@
-# Newsletter-Server
+# Newsletter-Server 
+
+_project to be updated_
 
 <strong><i> Mailchimp disables publicly shared API keys, therefore app.js (the server file) can not be uploaded.</i> </strong> 
 
